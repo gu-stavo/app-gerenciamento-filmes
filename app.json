@@ -12,7 +12,9 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "buildNumber": "<your_build_number_here>",
+      "bundleIdentifier": "<your_bundle_identifier_here>"
     },
     "android": {
       "adaptiveIcon": {
@@ -22,6 +24,18 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "onesignal-expo-plugin",
+        {
+          "mode": "development",
+          "devTeam": "91SW8A37CR"
+        }
+      ]
+    ],
+    "extra": {
+      "oneSignalAppId": "84452f06-defc-4438-b4f5-2dedd9107015"
     }
   }
 }
